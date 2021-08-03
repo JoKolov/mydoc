@@ -35,3 +35,12 @@ or
 chgrp -R www-data /path/to/mysite
 chmod -R g+ws /path/to/mysite
 ```
+
+
+## Files Management
+* Bulk rename files using current pattern with mmv [source](https://unix.stackexchange.com/questions/491273/renaming-files-by-extracting-parts-of-filenames-that-match-with-a-pattern)
+ex : rename files myfile_month_year.ext to myfile_year_month.ext
+```
+mmv "myfile_*_*.ext" "myfile_#2_#1.ext"
+```
+It tries to substitute each part with a wildcard pattern, consequently, we can re-use the part with #1, #2, and so on.

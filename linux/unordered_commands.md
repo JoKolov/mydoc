@@ -44,3 +44,9 @@ ex : rename files myfile_month_year.ext to myfile_year_month.ext
 mmv "myfile_*_*.ext" "myfile_#2_#1.ext"
 ```
 It tries to substitute each part with a wildcard pattern, consequently, we can re-use the part with #1, #2, and so on.
+
+* Bulk rename files changing part of filename with rename
+ex : rename files sheetName_1.ext sheetName_2.ext ... to coolFileName_1.ext coolFileName_2.ext
+```
+rename 's/sheetName/coolFileName/' *.ext
+```

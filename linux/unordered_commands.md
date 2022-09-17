@@ -36,6 +36,15 @@ chgrp -R www-data /path/to/mysite
 chmod -R g+ws /path/to/mysite
 ```
 
+## find + chmod
+* Usefull to dev with www-data:www-data in local environment
+Set Writeable dir and files inside a project dir for users from the same group
+Typically to let files owner to www-data:www-data and use IDE with personnalaccount:www-data user
+```
+find ./ -type d -exec chmod 775 {} \+
+find ./ -type f -exec chmod 664 {} \+
+```
+
 
 ## Files Management
 * Bulk rename files using current pattern with mmv [source](https://unix.stackexchange.com/questions/491273/renaming-files-by-extracting-parts-of-filenames-that-match-with-a-pattern)

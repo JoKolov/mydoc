@@ -7,3 +7,5 @@ This documentation is only for remember commands and actions used for my tools.
 * [unordered commands](linux/unordered_commands.md)
 ### Websites
 * [.htaccess](websites/htaccess.md)
+### WordPress snippets
+* [WooCommerce Admin Notices](wordpress/woocommerce/admin-notices.md)
